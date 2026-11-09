@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Eye — a stare drawn in characters</title>
+<meta name="description" content="An eye made of text characters that watches your pointer. Click and you fall through the pupil into another eye, and another. One WebGL shader, no images, no libraries." />
+<meta name="theme-color" content="#050403" />
+<meta property="og:title" content="Eye — a stare drawn in characters" />
+<meta property="og:description" content="An eye made of text that watches you. Fall through the pupil and there is another one inside." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23050403'/%3E%3Cpath d='M3 16C8 8 24 8 29 16C24 24 8 24 3 16z' fill='none' stroke='%23efe9dc' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffb561'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23050403'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="eye" role="img" aria-label="An animated eye drawn entirely from amber text characters on black. It follows the pointer, blinks, and holds a smaller eye inside its pupil."></canvas>
+
+<div class="intro" aria-hidden="true">
+  <span class="intro-word">Eye</span>
+  <span class="intro-sub">with JavaScript</span>
+</div>
+
+<header class="hud tl">
+  <h1>Eye</h1>
+  <p>A stare drawn in characters</p>
+</header>
+
+<p class="hud tr">No images<br />No libraries<br />One shader</p>
+
+<p class="hud bl">
+  <span class="depth" id="depth">Depth 00</span>
+  <span id="hint">Move to hold its gaze &middot; Click to fall in &middot; Scroll to drift</span>
+</p>
+
+<nav class="hud br">
+  <a href="https://github.com/G93-32/eye" target="_blank" rel="noopener">Source</a>
+  <a href="https://g93-32.github.io/G-Portfolio/">Gurjot Singh</a>
+</nav>
+
+<p class="fallback">This eye is drawn with WebGL, which this browser has switched off.</p>
+<noscript><p class="noscript">This eye is drawn with JavaScript. Turn it on to be looked at.</p></noscript>
+
+<script src="eye.js"></script>
+</body>
+</html>
